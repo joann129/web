@@ -27,5 +27,7 @@
     "stylelint": "*",
     "stylelint-config-standard": "*"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "stylelint-config-recommended": "^3.0.0"
+  }
 }

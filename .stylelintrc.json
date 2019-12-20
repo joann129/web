@@ -1,6 +1,12 @@
 {
-    "extends": "stylelint-config-standard",
-    "rules": {
-        "declaration-block-trailing-semicolon": null
-    }
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-standard"
+  ],
+  "rules": {
+    "indentation": 2
+  },
+  "ignoreFiles": [
+    "*/**/*.jpg"
+  ]
 }
