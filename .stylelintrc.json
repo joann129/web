@@ -7,6 +7,9 @@
     "indentation": 2
   },
   "ignoreFiles": [
-    "*/**/*.jpg"
+    "*/**/*.jpg",
+    "*/**/*.png",
+    "*/**/*.jpge",
+    "*/**/*.gif"
   ]
 }
