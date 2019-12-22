@@ -17,48 +17,60 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
-  <style>  
-  #item-table {
-    margin: auto;
-    padding: auto;
-  }
-  #title-h1 {
-   margin: auto;
-  padding: 15px;
-  color: white;
-  background-color: #e97532;
-  font-family: "Microsoft JhengHei", monospace, sans-serif;
-  font-size: small;
-  text-align: left;
-  }
-  #title-p {
-    margin: auto;
-  padding: 15px;
-  color: black;
-  background-color: #dfc8bb;
-  font-family: "Microsoft JhengHei", monospace, sans-serif;
-  font-size: small;
-  text-align: left;
-  vertical-align: middle;
-  }
-  .container{
-    padding: 25px;
-    margin: auto;
-  }
-  .button {
-   border: none;
-  color: white;
-  padding: 5px 10px;
-  text-align: center;
-  font-size: 12px;
-  text-decoration: none;
-  display: inline-block;
+  <style>
+    #item-table {
+      margin: auto;
+      padding: auto;
+    }
 
-  cursor: pointer;
-  vertical-align: middle;
- }
-  .button1 {background-color: #e97532; border-radius: 4px;}
-  .button2 {background-color: #008CBA; border-radius: 4px;}
+    #title-h1 {
+      margin: auto;
+      padding: 15px;
+      color: white;
+      background-color: #e97532;
+      font-family: "Microsoft JhengHei", monospace, sans-serif;
+      font-size: small;
+      text-align: left;
+    }
+
+    #title-p {
+      margin: auto;
+      padding: 15px;
+      color: black;
+      background-color: #dfc8bb;
+      font-family: "Microsoft JhengHei", monospace, sans-serif;
+      font-size: small;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    .container {
+      padding: 25px;
+      margin: auto;
+    }
+
+    .button {
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      text-align: center;
+      font-size: 12px;
+      text-decoration: none;
+      display: inline-block;
+
+      cursor: pointer;
+      vertical-align: middle;
+    }
+
+    .button1 {
+      background-color: #e97532;
+      border-radius: 4px;
+    }
+
+    .button2 {
+      background-color: #008CBA;
+      border-radius: 4px;
+    }
   </style>
 </head>
 
@@ -68,7 +80,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>  
+    </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li><a class="nav-link" href="view.html">景點介紹</a></li>
@@ -85,30 +97,30 @@
   </div>
   <div class="container">
     <table id="#item-table">
-    <form action="/action_page.php">
-      <tr>
-        <td>捐款金額&emsp;&emsp;
-        新台幣&emsp;<input type="text">&emsp;元(請自行輸入100元!含)以上之捐款金額請直接選擇以下捐款金額</td>
-      </tr>
-      <tr>
-        <td>捐款類別&emsp;&emsp;
-          <input type="radio" name="捐款類別" value="單次扣款" >單次扣款&emsp;
-          <input type="radio" name="捐款類別" value="單次定額捐款" >單次定額捐款<br>
-        </td>
-      </tr>
-      <tr>
-        <td>捐款方式&emsp;&emsp;
-            <input type="radio" name="捐款方式" value="Visa/JCB" >Visa/JCB&emsp;
-            <input type="radio" name="捐款方式" value="LINE pay" >LINE pay
-        </td>
-      </tr>
-    </form>
+      <form action="/action_page.php">
+        <tr>
+          <td>捐款金額&emsp;&emsp;
+            新台幣&emsp;<input type="text">&emsp;元(請自行輸入100元!含)以上之捐款金額請直接選擇以下捐款金額</td>
+        </tr>
+        <tr>
+          <td>捐款類別&emsp;&emsp;
+            <input type="radio" name="捐款類別" value="單次扣款">單次扣款&emsp;
+            <input type="radio" name="捐款類別" value="單次定額捐款">單次定額捐款<br>
+          </td>
+        </tr>
+        <tr>
+          <td>捐款方式&emsp;&emsp;
+            <input type="radio" name="捐款方式" value="Visa/JCB">Visa/JCB&emsp;
+            <input type="radio" name="捐款方式" value="LINE pay">LINE pay
+          </td>
+        </tr>
+      </form>
     </table>
   </div>
   <div id="title-div2">
     <p id="title-p">捐款人付款資料
-      <button type="submit" class="button button1" value="A" >一般捐款</button>
-      <button type="submit" class="button button2" value="B" >快速捐款</button></p>
+      <button type="submit" class="button button1" value="A">一般捐款</button>
+      <button type="submit" class="button button2" value="B">快速捐款</button></p>
   </div>
 </body>
 
