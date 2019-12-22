@@ -17,12 +17,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
-  <style>
-    #item-table {
-      margin: auto;
-      padding: auto;
-    }
 
+  <style>
     #title-h1 {
       margin: auto;
       padding: 15px;
@@ -52,13 +48,14 @@
     .button {
       border: none;
       color: white;
-      padding: 5px 10px;
+      padding: 10px 10px;
       text-align: center;
       font-size: 12px;
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
       vertical-align: middle;
+      margin: auto;
     }
 
     .button1 {
@@ -67,8 +64,9 @@
     }
 
     .button2 {
-      background-color: #008cba;
+      background-color: #45bce4;
       border-radius: 4px;
+      width: 100%;
     }
   </style>
 </head>
@@ -95,31 +93,39 @@
     <h1 id="title-h1">捐款人付款資料</h1>
   </div>
   <div class="container">
-    <table id="item-table">
-      <form action="/action_page.php">
-        <tr>
-          <td>捐款金額&emsp;&emsp;
-            新台幣&emsp;<input type="text">&emsp;元(請自行輸入100元!含)以上之捐款金額請直接選擇以下捐款金額</td>
-        </tr>
-        <tr>
-          <td>捐款類別&emsp;&emsp;
-            <input type="radio" name="捐款類別" value="單次扣款">單次扣款&emsp;
-            <input type="radio" name="捐款類別" value="單次定額捐款">單次定額捐款<br>
-          </td>
-        </tr>
-        <tr>
-          <td>捐款方式&emsp;&emsp;
-            <input type="radio" name="捐款方式" value="Visa/JCB">Visa/JCB&emsp;
-            <input type="radio" name="捐款方式" value="LINE pay">LINE pay
-          </td>
-        </tr>
-      </form>
-    </table>
+    <form action="/action_page.php">
+      <div class="row">
+        <p class="col-md-3">捐款金額</p>
+        <p class="col-md-9">新台幣&emsp;<input type="text">&emsp;元(請自行輸入100元!含)以上之捐款金額請直接選擇以下捐款金額</p>
+      </div>
+      <div class="row">
+        <p class="col-md-3"></p>
+        <p class="col-md-3"><button type="button" class="button button2" value="300">NT.300</button></p>
+        <p class="col-md-3"><button type="button" class="button button2" value="500">NT.500</button></p>
+        <p class="col-md-3"><button type="button" class="button button2" value="1000">NT.1000</button></p>
+      </div>
+      <div class="row">
+        <p class="col-md-3"></p>
+        <p class="col-md-3"><button type="button" class="button button2" value="2000">NT.2000</button></p>
+        <p class="col-md-3"><button type="button" class="button button2" value="3000">NT.3000</button></p>
+        <p class="col-md-3"><button type="button" class="button button2" value="5000">NT.5000</button></p>
+      </div>
+      <div class="row">
+        <p class="col-md-3">捐款類別</p>
+        <p class="col-md-2"><input type="radio" name="捐款類別" value="單次扣款">單次扣款</p>
+        <p class="col-md-2"><input type="radio" name="捐款類別" value="單次定額捐款">定期定額捐款</p>
+      </div>
+      <div class="row">
+        <p class="col-md-3">捐款方式</p>
+        <p class="col-md-2"><input type="radio" name="捐款方式" value="Visa/JCB">Visa/JCB</p>
+        <p class="col-md-2"><input type="radio" name="捐款方式" value="LINE pay">LINE pay</p>
+      </div>
+    </form>
   </div>
   <div id="title-div2">
     <p id="title-p">捐款人付款資料
       <button type="submit" class="button button1" value="A">一般捐款</button>
-      <button type="submit" class="button button2" value="B">快速捐款</button></p>
+      <button type="submit" class="button button1" value="B">快速捐款</button></p>
   </div>
 </body>
 
