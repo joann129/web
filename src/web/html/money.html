@@ -40,11 +40,6 @@
       vertical-align: middle;
     }
 
-    .container {
-      padding: 25px;
-      margin: auto;
-    }
-
     .button {
       border: none;
       color: white;
@@ -58,6 +53,11 @@
       margin: auto;
     }
 
+    .container {
+      padding: 15px 15px;
+      margin: auto;
+    }
+
     .button1 {
       background-color: #e97532;
       border-radius: 4px;
@@ -67,6 +67,10 @@
       background-color: #60c7ca;
       border-radius: 4px;
       width: 100%;
+    }
+
+    .context {
+      padding: 0;
     }
   </style>
 </head>
@@ -92,8 +96,8 @@
   <div id="shop-title-div">
     <h1 id="title-h1">捐款人付款資料</h1>
   </div>
-  <div class="container">
-    <form action="/action_page.php">
+  <form class="ip" action="/action_page.php">
+    <div class="container">
       <div class="row">
         <p class="col-md-3">捐款金額</p>
         <p class="col-md-9">新台幣&emsp;<input type="number" name="quantity" min="1" max="100"
@@ -121,13 +125,13 @@
         <p class="col-md-2"><input type="radio" name="捐款方式" value="Visa/JCB" required>Visa/JCB</p>
         <p class="col-md-2"><input type="radio" name="捐款方式" value="LINE pay" required>LINE pay</p>
       </div>
-      <div id="title-2">
-        <p id="title-p">捐款人付款資料
+    </div>
+    <div class="context" calss="row">
+      <p id="title-p">捐款人付款資料
         <button type="submit" class="button button1" value="A">一般捐款</button>
         <button type="submit" class="button button1" value="B">快速捐款</button></p>
-      </div>
-    </form>
-</div>
+    </div>
+  </form>
 </body>
 
 </html>
