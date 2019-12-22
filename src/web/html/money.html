@@ -64,7 +64,7 @@
     }
 
     .button2 {
-      background-color: #45bce4;
+      background-color: #60c7ca;
       border-radius: 4px;
       width: 100%;
     }
@@ -96,7 +96,7 @@
     <form action="/action_page.php">
       <div class="row">
         <p class="col-md-3">捐款金額</p>
-        <p class="col-md-9">新台幣&emsp;<input type="text">&emsp;元(請自行輸入100元!含)以上之捐款金額請直接選擇以下捐款金額</p>
+        <p class="col-md-9">新台幣&emsp;<input type="number" name="quantity" min="1" max="100" required>&emsp;元(請自行輸入100元!含)以上之捐款金額請直接選擇以下捐款金額</p>
       </div>
       <div class="row">
         <p class="col-md-3"></p>
@@ -112,21 +112,21 @@
       </div>
       <div class="row">
         <p class="col-md-3">捐款類別</p>
-        <p class="col-md-2"><input type="radio" name="捐款類別" value="單次扣款">單次扣款</p>
-        <p class="col-md-2"><input type="radio" name="捐款類別" value="單次定額捐款">定期定額捐款</p>
+        <p class="col-md-2"><input type="radio" name="捐款類別" value="單次扣款" required>單次扣款</p>
+        <p class="col-md-2"><input type="radio" name="捐款類別" value="單次定額捐款"required>定期定額捐款</p>
       </div>
       <div class="row">
         <p class="col-md-3">捐款方式</p>
-        <p class="col-md-2"><input type="radio" name="捐款方式" value="Visa/JCB">Visa/JCB</p>
-        <p class="col-md-2"><input type="radio" name="捐款方式" value="LINE pay">LINE pay</p>
+        <p class="col-md-2"><input type="radio" name="捐款方式" value="Visa/JCB" required>Visa/JCB</p>
+        <p class="col-md-2"><input type="radio" name="捐款方式" value="LINE pay" required>LINE pay</p>
       </div>
-    </form>
   </div>
   <div id="title-2">
     <p id="title-p">捐款人付款資料
       <button type="submit" class="button button1" value="A">一般捐款</button>
       <button type="submit" class="button button1" value="B">快速捐款</button></p>
   </div>
+  </form>
 </body>
 
 </html>
