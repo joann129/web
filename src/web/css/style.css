@@ -26,3 +26,7 @@
 #myBtn:hover {
   background-color: #555;
 }
+
+nav {
+  font-family: "微軟正黑體", "Microsoft JhengHei", arial, helvetica, sans-serif;
+}
