@@ -79,34 +79,34 @@
   </style>
   <script>
     //buttom
-    function value1(){
+    function value1() {
       var ans = document.getElementById("1").value;
       window.alert(ans);
-      var ma= document.getElementById("num").value;
-      ma="12";
+      var ma = document.getElementById("num").value;
+      ma = "12";
       document.getElementById("num").innerHTML = ma;
     }
-    function value2(){
+    function value2() {
       var vv = document.getElementById("2").value;
       window.alert(vv);
-    } 
-    function value3(){
+    }
+    function value3() {
       var vv = document.getElementById("3").value;
       window.alert(vv);
-    } 
-    function value4(){
+    }
+    function value4() {
       var vv = document.getElementById("4").value;
       window.alert(vv);
-    } 
-    function value5(){
+    }
+    function value5() {
       var vv = document.getElementById("5").value;
       window.alert(vv);
-    } 
-    function value6(){
+    }
+    function value6() {
       var vv = document.getElementById("6").value;
       window.alert(vv);
-    } 
-    function value6(){
+    }
+    function value6() {
       var vv = document.getElementById("6").value;
       window.alert(vv);
     } 
@@ -141,17 +141,25 @@
         <p class="col-md-9">新台幣&emsp;<input type="text" id="num" name="quantity" value="11"
             required>&emsp;元(請自行輸入金額!)或直接選擇以下捐款金額</p>
       </div>
-      <div class="row"><!--id ?-->
+      <div class="row">
+        <!--id ?-->
         <p class="col-md-3"></p>
-        <p class="col-md-3" value="300" ><button type="button" class="button button2" id="1" value="300"  onclick="value1()">NT.300</button></p>
-        <p class="col-md-3" value="500" ><button type="button" class="button button2" id="2" value="500"  onclick="value2()">NT.500</button></p>
-        <p class="col-md-3" value="1000"><button type="button" class="button button2" id="3" value="1000" onclick="value3()">NT.1000</button></p>
+        <p class="col-md-3" value="300"><button type="button" class="button button2" id="1" value="300"
+            onclick="value1()">NT.300</button></p>
+        <p class="col-md-3" value="500"><button type="button" class="button button2" id="2" value="500"
+            onclick="value2()">NT.500</button></p>
+        <p class="col-md-3" value="1000"><button type="button" class="button button2" id="3" value="1000"
+            onclick="value3()">NT.1000</button></p>
       </div>
-      <div class="row"><!--id ?-->
+      <div class="row">
+        <!--id ?-->
         <p class="col-md-3"></p>
-        <p class="col-md-3"><button type="button" class="button button2" id="4" value="2000" onclick="value4()">NT.2000</button></p>
-        <p class="col-md-3"><button type="button" class="button button2" id="5" value="3000" onclick="value5()">NT.3000</button></p>
-        <p class="col-md-3"><button type="button" class="button button2" id="6" value="5000" onclick="value6()">NT.5000</button></p>
+        <p class="col-md-3"><button type="button" class="button button2" id="4" value="2000"
+            onclick="value4()">NT.2000</button></p>
+        <p class="col-md-3"><button type="button" class="button button2" id="5" value="3000"
+            onclick="value5()">NT.3000</button></p>
+        <p class="col-md-3"><button type="button" class="button button2" id="6" value="5000"
+            onclick="value6()">NT.5000</button></p>
       </div>
       <span id="output"></span>
       <div class="row">
