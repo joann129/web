@@ -46,6 +46,7 @@
 
     .button {
       border: none;
+      font-family: "Microsoft JhengHei", monospace, sans-serif;
       color: white;
       padding: 10px 10px;
       text-align: center;
@@ -58,22 +59,26 @@
     }
 
     .container {
+      font-family: "Microsoft JhengHei", monospace, sans-serif;
       padding: 15px 15px;
       margin: auto;
     }
 
     .button1 {
+      font-family: "Microsoft JhengHei", monospace, sans-serif;
       background-color: #e97532;
       border-radius: 4px;
     }
 
     .button2 {
+      font-family: "Microsoft JhengHei", monospace, sans-serif;
       background-color: #60c7ca;
       border-radius: 4px;
       width: 100%;
     }
 
     .context {
+      font-family: "Microsoft JhengHei", monospace, sans-serif;
       padding: 0;
     }
   </style>
@@ -106,7 +111,7 @@
   <div id="shop-title-div">
     <h1 id="title-h1">捐款人付款資料</h1>
   </div>
-  <form class="ip" onclick="put()">
+  <form class="ip" action="action_page.html">
     <div class="container">
       <div class="row">
         <p class="col-md-3">捐款金額</p>
@@ -115,21 +120,20 @@
       </div>
       <div class="row">
         <p class="col-md-3"></p>
-        <p class="col-md-3" value="300"><input type="button"  class="button button2" id="1" value="NT.300"
+        <p class="col-md-3"><input type="button"  class="button button2" value="NT.300"
             onclick="change(3)"></p>
-        <p class="col-md-3" value="500"><input type="button"  class="button button2" id="1" value="NT.500"
+        <p class="col-md-3"><input type="button"  class="button button2" value="NT.500"
             onclick="change(5)"></p>
-        <p class="col-md-3" value="1000"><input type="button" class="button button2" id="1" value="NT.1000"
+        <p class="col-md-3"><input type="button" class="button button2" value="NT.1000"
             onclick="change(10)"></p>
       </div>
       <div class="row">
-        <!--id ?-->
         <p class="col-md-3"></p>
-        <p class="col-md-3" value="300"><input type="button"  class="button button2" id="1" value="NT.300"
+        <p class="col-md-3"><input type="button"  class="button button2" value="NT.2000"
           onclick="change(20)"></p>
-      <p class="col-md-3" value="500"><input type="button"  class="button button2" id="1" value="NT.500"
+        <p class="col-md-3"><input type="button"  class="button button2" value="NT.3000"
           onclick="change(30)"></p>
-      <p class="col-md-3" value="1000"><input type="button" class="button button2" id="1" value="NT.1000"
+        <p class="col-md-3"><input type="button" class="button button2" value="NT.5000"
           onclick="change(50)"></p>
       </div>
       <span id="output"></span>
@@ -143,11 +147,25 @@
         <p class="col-md-2"><input type="radio" name="捐款方式" value="Visa/JCB" required>Visa/JCB</p>
         <p class="col-md-2"><input type="radio" name="捐款方式" value="LINE pay" required>LINE pay</p>
       </div>
+      <div class="row">
+        <p class="col-md-3">捐款者姓名</p>
+        <p class="col-md-9"><input type="text" name="姓名" placeholder="請輸入真實姓名"
+            required></p>
+      </div>
+      <div class="row">
+        <p class="col-md-3">郵件信箱</p>
+        <p class="col-md-9"><input type="email" name="信箱" placeholder="請輸入電子信箱"
+            required></p>
+      </div>
+      <div class="row">
+        <p class="col-md-3">連絡電話</p>
+        <p class="col-md-9"><input type="text" name="號碼" placeholder="請輸入真實號碼"
+            required></p>
+      </div>
     </div>
     <div class="context" calss="row">
       <p id="title-p">捐款人付款資料
-        <button type="submit" class="button button1" value="A">一般捐款</button>
-        <button type="submit" class="button button1" value="B">快速捐款</button></p>
+        <button type="submit" class="button button1" value="A">確認捐款</button></p>
     </div>
   </form>
 </body>
