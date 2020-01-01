@@ -51,6 +51,26 @@
       margin: auto;
       text-align: center;
     }
+
+    font-family:Microsoft JhengHei;
+    }
+
+    .container {
+      padding: 15px 15px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .itemtext {
+      color:#e97532;
+      padding: 10px 10px;
+      text-align: center;
+    }
   </style>
 
 </head>
@@ -74,12 +94,59 @@
   </nav>
   <br><br><br>
   <div class="container">
-    <button type="button" class="button button2" value="300">所有商品</button>
-    <button type="button" class="button button2" value="500">梨山茶</button>
-    <button type="button" class="button button2" value="1000">梨山茶</button>
-    <button type="button" class="button button2" value="1000">梨山茶</button>
-    <button type="button" class="button button2" value="1000">梨山茶</button>
+    <div class="btn-group">
+      <button type="button" class="button button2 btn btn-primary">所有商品</button>
+      <!--<button type="button" class="button button2 btn btn-primary dropdown-toggle" value="500" onclick="shop_tea.html">梨山茶</button>
+      <button type="button" class="button button2 btn btn-primary dropdown-toggle" value="1000">梨山蜜李</button>
+      <button type="button" class="button button2 btn btn-primary dropdown-toggle" value="1000">梨山蜜梨</button>
+      <button type="button" class="button button2 btn btn-primary dropdown-toggle" value="1000">蜜蘋果</button>-->
+      <button type="button" class="button button2 btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">所有商品</a></li>
+        <li><a href="#">梨山茶</a></li>
+        <li><a href="#">梨山蜜李</a></li>
+        <li><a href="#">梨山蜜梨</a></li>
+        <li><a href="#">蜜蘋果</a></li>
+      </ul>
+    </div>
   </div>
+  
+  <!--<div class="container">
+    <button type="button" class="button button2" value="300">所有商品</button>
+    <button type="button" class="button button2" value="500" onclick="shop_tea.html">梨山茶</button>
+    <button type="button" class="button button2" value="1000">梨山蜜李</button>
+    <button type="button" class="button button2" value="1000">梨山蜜梨</button>
+    <button type="button" class="button button2" value="1000">蜜蘋果</button>
+  </div>-->
+  <section class="container" style="margin-top: 90px; margin-bottom: 150px;">
+    <div class="row">
+      <div class="col-12 col-xs-6 col-md-6">
+        <img class="img-fluid img-thumbnail" src="../img/商店/梨山茶-600x450.jpg">
+        <h5 class="itemtext mt-6 col-md-12">梨山茶</h5>
+        <td><a href="../html/shop_tea.html">閱讀更多 →</a></td>
+      </div>
+    
+      <div class="col-12 col-xs-6 col-md-6">
+        <img class="img-fluid img-thumbnail" src="../img/商店/梨山蜜李.jpg">
+        <h5 class="itemtext mt-6 col-md-12">梨山蜜李</h5>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-12 col-xs-4 col-md-6">
+        <img class="img-fluid img-thumbnail" src="../img/商店/梨山蜜梨.jpg">
+        <h5 class="itemtext mt-6 col-md-12">梨山蜜梨</h5>
+      </div>
+    
+      <div class="col-12 col-xs-4 col-md-6">
+        <img class="img-fluid img-thumbnail" src="../img/商店/蜜蘋果.jpg">
+        <h5 class="itemtext mt-6 col-md-12">蜜蘋果</h5>
+      </div>
+    </div>
+  </section>
+  
+  
 </body>
 
 </html>
+ 
